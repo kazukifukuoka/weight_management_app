@@ -29,7 +29,6 @@ graphs = []
   graphs << {
     user_id: user.id,
     date: date,
-    # to_f を入れておかないと整数になるので注意！
     weight: rand(MIN_WEIGHT..MAX_WEIGHT).to_f / DIV_CONSTANT
   }
 end
